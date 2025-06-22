@@ -1,9 +1,0 @@
-
-const Card = () => {
-
- return (
-  <>
-  test
-  </>
- )
-}

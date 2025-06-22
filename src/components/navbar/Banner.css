@@ -1,0 +1,25 @@
+.banner{
+ position: relative;
+ background-position: center;
+ background-size: cover;
+ max-width: 100vw;
+ padding-inline: 2rem;
+ background-image: url("https://unsplash.it/1920/1080");
+ min-height: 140px;
+ max-width: 80Vw;
+ margin: auto;
+ margin-top: 20px;
+ border-radius: 2rem;
+ display: grid;
+ place-items: center;
+ color: white;
+ margin-bottom: 2rem;
+}
+
+.banner::before{
+ position: absolute;
+ border-radius: 2rem;
+ content: "";
+ inset: 0;
+ opacity: 0.5;
+}
