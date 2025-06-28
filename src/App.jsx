@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from "./components/navbar/Navbar.jsx";
-import Banner from "./components/navbar/Banner.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Banner from "./components/Banner.jsx";
 import "./App.css";
-import ApartmentGrid from "./components/navbar/ApartmentGrid.jsx";
-import Main from "./components/navbar/Main.jsx";
-import Footer from "./components/navbar/Footer.jsx";
+import ApartmentGrid from "./components/ApartmentGrid.jsx";
+import Main from "./pages/Main.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import bannerImage from '../../assets/MaskGroup.png';
+import bannerImage from '../assets/MaskGroup.png';
 
 export default function Banner() {
   return (
