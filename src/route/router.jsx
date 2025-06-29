@@ -1,32 +1,32 @@
-import { createRoot } from 'react-dom/client';
-import { StrictMode } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from '../App'; // Assure-toi que App est bien importé
+import { createBrowserRouter, Outlet } from "react-router-dom";
+import HeaderFooterLayout from "../layout/HeaderFooterLayout";
+import App from "../App"; // ✅ Corrigé ici
+import Main from "../pages/Main"; // ✅ car Main.jsx est dans /pages/
+import Navbar from "../components/Navbar";
 
-const HeaderFooterLayout = () => {
-  return (
-    <>
-      <Navbar />
-      <Main>
-        <Outlet />
-      </Main>
-      <Footer />
-    </>
-  );
-};
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    errorElement: <h1>404 not found</h1>
-  },
-  {
-    path: "/flat",
-    element: <h1>Nos appartements</h1>
-  },
-  {
-    path: "/about",
-    element: <h1>A propos</h1>
+    path: '/',
+    element: <HeaderFooterLayout />,
+    errorElement: <h1>404 not found</h1>,
+    children: [
+      { index: true, element: <App /> }, // Route d'accueil
+      {
+        path: "/flat",
+        element: (
+          <Main>
+            <h1>Appartement</h1>
+          </Main>
+        ),
+      },
+      { path: "/about", 
+        element: 
+        <Main>
+          <h1>A propos</h1>
+        </Main> 
+      },
+    ],
   },
 ]);
+

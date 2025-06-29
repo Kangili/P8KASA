@@ -16,6 +16,10 @@
  text-decoration: underline;
 }
 
-.navbar__logo{
- margin-right: auto;
+.navbar a.active{
+  text-decoration: underline;
+}
+
+.navbar >*:first-child{
+  margin-right: auto;
 }
