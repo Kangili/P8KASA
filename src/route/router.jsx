@@ -15,11 +15,11 @@ export const router = createBrowserRouter([
       { index: true, element: <Homepage/> }, // Route d'accueil
       {
         path: "/flat",
-        element: (
-          <Main>
-            <h1><ApartmentPage/></h1>
-          </Main>
-        ),
+       element: (
+       <Main>
+        <ApartmentPage />
+       </Main>
+      ),
       },
       { path: "/about", 
         element: 
