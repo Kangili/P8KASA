@@ -45,8 +45,9 @@
 }
 
 .apartment_header{
-display: flex;
-gap : 1rem
+ display: flex;
+ gap : 1rem;
+ margin-bottom : 2rem;
 }
 
 .apartment_owner{
@@ -88,4 +89,13 @@ gap : 1rem
 
 .off{
  color:#C4C4C4;
+}
+
+.apartment_owner_stars{
+  font-size: 2rem;
+}
+
+.apartment_description_area{
+  display:flex;
+  gap: 1rem;
 }
