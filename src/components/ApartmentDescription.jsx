@@ -10,7 +10,8 @@ export function ApartmentDescription() {
       </p>
 
       <p className="description_content">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        Vou serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à coté de nombreux bars et restaurants.
+        Au coeur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7minutes à pied).
       </p>
     </div>
   );
