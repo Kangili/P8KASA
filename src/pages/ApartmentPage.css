@@ -16,3 +16,9 @@
   display:flex;
   gap: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .apartment_description_area {
+    flex-direction: column;
+  }
+}
