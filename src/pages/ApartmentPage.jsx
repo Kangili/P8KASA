@@ -1,13 +1,13 @@
 import React from "react";
 import "./ApartmentPage.css";
 import { ApartmentDescription } from "../components/ApartmentDescription";
-import ApartmentBanner from "../components/ApartmentBanner";
+import ImageBanner from '../components/ImageBanner';
 import ApartmentHeader from "../components/ApartmentHeader";
 
 function ApartmentPage() {
   return (
     <div className="apartment-page">
-      <ApartmentBanner/>
+      <ImageBanner/>
        <ApartmentHeader/>
       <div className="apartment_description_area">
         <ApartmentDescription/>

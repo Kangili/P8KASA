@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage"; // ✅ Corrigé ici
 import ApartmentPage from "../pages/ApartmentPage"; // ✅ Corrigé ici
 import Main from "../pages/Main"; // ✅ car Main.jsx est dans /pages/
 import Navbar from "../components/Navbar";
+import About from "../pages/About";
 
 
 export const router = createBrowserRouter([
@@ -22,10 +23,7 @@ export const router = createBrowserRouter([
       ),
       },
       { path: "/about", 
-        element: 
-        <Main>
-          <h1>A propos</h1>
-        </Main> 
+        element: <About />
       },
     ],
   },

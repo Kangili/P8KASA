@@ -1,4 +1,4 @@
-.apartment-banner {
+.image-banner {
   width: 100%;
   max-width: 1240px;   /* largeur max pour correspondre à Kasa */
   margin: 0 auto 1rem; /* centre la div et ajoute un margin bottom */
@@ -8,7 +8,7 @@
   box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
 }
 
-.apartment-banner img {
+.image-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
