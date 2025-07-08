@@ -13,7 +13,7 @@ function Navbar() {
       <NavLink to ="/">
         Accueil
       </NavLink>
-      <NavLink to ="about">
+      <NavLink to ="/about">
         <div>A propos</div>
       </NavLink>
     </nav>

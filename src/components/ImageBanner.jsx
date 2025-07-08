@@ -1,5 +1,6 @@
 import React from 'react';
-import backgroundImage from '../assets/Background.png';  // chemin relatif depuis components
+import backgroundImage from '../assets/Background.png';  // CHEMIN RELATIF
+import "./ImageBanner.css"
 
 function ImageBanner() {
   return (
@@ -10,4 +11,5 @@ function ImageBanner() {
 }
 
 export default ImageBanner;
+
 

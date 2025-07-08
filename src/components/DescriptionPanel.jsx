@@ -1,9 +1,9 @@
 import React from "react";
-import"./ApartmentDescription.css";
+import"./DescriptionPanel.css";
 
-export function ApartmentDescription() {
+export function DescriptionPanel() {
   return (
-    <div className="apartment_descrpition">
+    <div className="descrpition_panel">
       <p className="description_header">
         <span>Description</span>
         <i className="fas fa-chevron-up"></i>
@@ -16,3 +16,5 @@ export function ApartmentDescription() {
     </div>
   );
 }
+
+export default DescriptionPanel;

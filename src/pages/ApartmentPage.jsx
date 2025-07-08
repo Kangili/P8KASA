@@ -1,6 +1,6 @@
 import React from "react";
 import "./ApartmentPage.css";
-import { ApartmentDescription } from "../components/ApartmentDescription";
+import { DescriptionPanel } from "../components/DescriptionPanel";
 import ImageBanner from '../components/ImageBanner';
 import ApartmentHeader from "../components/ApartmentHeader";
 
@@ -10,8 +10,8 @@ function ApartmentPage() {
       <ImageBanner/>
        <ApartmentHeader/>
       <div className="apartment_description_area">
-        <ApartmentDescription/>
-        <ApartmentDescription/>
+        <DescriptionPanel/>
+        <DescriptionPanel/>
       </div>
     </div>
   );

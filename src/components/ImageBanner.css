@@ -6,6 +6,7 @@
   border-radius: 1rem;
   overflow: hidden;    /* pour que border-radius coupe bien l'image */
   box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
+  margin-bottom: 2rem;
 }
 
 .image-banner img {
