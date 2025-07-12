@@ -1,0 +1,27 @@
+.error-page{
+ color: #ff6060;
+}
+
+.error-code{
+ font-size: 10rem;
+ margin-bottom: 0.5rem;
+}
+
+.error-message{
+ font-size: 28px;
+ font-weight: 400;
+}
+
+.error-code,
+.error-message,
+.error-link {
+  text-align: center;
+}
+
+.error-link {
+ color: black;
+}
+
+.error-link:hover {
+ text-decoration: underline;
+}

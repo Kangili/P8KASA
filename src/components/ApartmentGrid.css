@@ -10,6 +10,11 @@
  margin-bottom: 3rem;
 }
 
+.grid > * {
+  width: 100%;
+  max-width: 20rem;
+}
+
 @media screen and (max-width: 768px) {
   .grid {
     justify-content: center;

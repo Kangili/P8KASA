@@ -5,13 +5,13 @@ import ApartmentPage from "../pages/ApartmentPage"; // ✅ Corrigé ici
 import Main from "../pages/Main"; // ✅ car Main.jsx est dans /pages/
 import Navbar from "../components/Navbar";
 import About from "../pages/About";
-
+import ErrorPageNotFound from '../pages/ErrorPageNotFound';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <HeaderFooterLayout />,
-    errorElement: <h1>404 not found</h1>,
+    errorElement: <ErrorPageNotFound/>,
     children: [
       { index: true, element: <Homepage/> }, // Route d'accueil
       {
