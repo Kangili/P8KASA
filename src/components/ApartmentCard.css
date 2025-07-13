@@ -1,5 +1,4 @@
 .apartment {
-  background-image: url("https://picsum.photos/200");
   border-radius: 1rem;
   flex-basis: 30%;
   display: grid;
@@ -18,7 +17,7 @@
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
-  filter: brightness(0.8);
+  filter: brightness(0.5rem);
 }
 
 @media screen and (max-width: 768px) {
