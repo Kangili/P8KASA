@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,6 +32,10 @@
 .apartment_owner_stars {
   font-size: 2rem;
   display: flex;
+  color:#c4c4c4;
+}
+
+.on{
   color: #ff6060;
 }
 
@@ -69,7 +72,7 @@
   display: inline-block;
 }
 
-.apartment_owner_badge {
+.apartment_owner_badge img{
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -83,9 +86,9 @@
 }
 
 .apartment_tags {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap; /* pour aller à la ligne si nécessaire */
 }
 
 .apartment_tags span {
@@ -99,14 +102,16 @@
   text-align: center;
 }
 
-.on {
-  color: #ff6060;
+
+.apartment_title_red {
+  color: #ff6060; /* rouge identique aux tags */
+  font-weight: 300; 
 }
 
-.off {
-  color: #c4c4c4;
+.apartment_location_black {
+  color: #000000; /* noir */
+  font-weight: 300; 
 }
-
 
 
 

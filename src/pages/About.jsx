@@ -7,12 +7,12 @@ import ImageBanner from '../components/ImageBanner';
 function About (){
   return (
     <>
-      <ImageBanner />
+      <ImageBanner/>
       <div className="about_container"> 
-         <DescriptionPanel />
-         <DescriptionPanel />
-         <DescriptionPanel />
-         <DescriptionPanel />
+         <DescriptionPanel title = "Fiabilité" content ="C'est très important"/>
+         <DescriptionPanel title = "Respect" content = "C'est très important"/>
+         <DescriptionPanel title = "Service" content = "C'est très important"/>
+         <DescriptionPanel title = "Sécurité" content = "C'est très important"/>
       </div>
     </>
   );

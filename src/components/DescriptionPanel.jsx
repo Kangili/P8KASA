@@ -1,18 +1,21 @@
-import React from "react";
 import"./DescriptionPanel.css";
+import React, { useState } from "react";
 
-export function DescriptionPanel() {
+export function DescriptionPanel(props) {
+const[isContentVisible, setIsContentVisible] = useState(true);
+
+const showContent =() => {
+  setIsContentVisible (!isContentVisible);
+}
+const contentClass = `description_content ${isContentVisible ? "visible" : "hidden"}`;
+const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
   return (
-    <div className="descrpition_panel">
-      <p className="description_header">
-        <span>Description</span>
-        <i className="fas fa-chevron-up"></i>
+    <div className="description_panel">
+      <p className="description_header" onClick={showContent}>
+        <span>{props.title}</span>
+        <i className={chevronClass}></i>
       </p>
-
-      <p className="description_content">
-        Vou serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à coté de nombreux bars et restaurants.
-        Au coeur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7minutes à pied).
-      </p>
+      <p className = {contentClass}>{props.content}</p>
     </div>
   );
 }

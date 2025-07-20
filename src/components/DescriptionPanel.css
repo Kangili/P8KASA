@@ -1,6 +1,7 @@
 .description_panel{
-  margin-block: 0rem;
   margin-bottom: 1rem;
+  flex-basis: 50%;
+  overflow: hidden;
 }
 
 .description_header{
@@ -15,6 +16,11 @@
   align-items: center;
 }
 
+.description_header i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .description_content{
   background-color: #F6F6F6;
   padding: 1rem;
@@ -24,9 +30,13 @@
   position: relative;
   top: -0.3rem;
   z-index: -1;
+  transition: transform 0.3s ease-in-out;
 }
 
-.description_header i {
-  font-size: 2rem;
-  cursor: pointer;
+.description_content.visible {
+ transform: translateY(0);
+}
+
+.description_content.hidden {
+ transform: translateY(-100%);
 }
