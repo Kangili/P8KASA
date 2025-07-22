@@ -30,15 +30,15 @@ function ApartmentPage() {
   if (flat == null) return <div>Loading...</div>;
   return (
     <div className="apartment-page">
-      <ImageBanner imageUrl = {flat.cover}/>
+      <ImageBanner pictures = {flat.pictures}/>
       <ApartmentHeader flat ={flat}/>
       <div className="apartment_description_area">
         {/* Ici tu peux passer selectedFlat en props à DescriptionPanel si besoin */}
         <DescriptionPanel title ="Description" content ={flat.description}/>
         <DescriptionPanel 
            title = "Equipements"
-          content = {flat.equipments.map ((eq) => (
-          <li>{eq}</li>
+          content = {flat.equipments.map ((eq, i) => (
+          <li key = {i}>{eq}</li>
         ))}
         />
       </div>
