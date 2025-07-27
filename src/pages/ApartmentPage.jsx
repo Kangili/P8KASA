@@ -3,30 +3,11 @@ import "./ApartmentPage.css";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import ImageBanner from '../components/ImageBanner';
 import ApartmentHeader from "../components/ApartmentHeader";
-import { useLocation } from "react-router-dom";
+import useApartment from "../hooks/useApartment.jsx";
 
 function ApartmentPage() {
-  const location = useLocation();
-  console.log("location:", location);
-  console.log("our apartment id is:", location.state.apartmentId);
+  const flat = useApartment();
 
-  const [flat, setFlat] = useState(null);
-  console.log ("flat", flat);
- 
-  useEffect(() => {
-    fetchApartmentData();
-  }, []);
-
-  function fetchApartmentData() {
-    fetch("db.json")
-      .then((res) => res.json())
-      .then((flats) => {
-        // Correction: c'est "selectedFlat" ou "flat" ? ici flat dans find
-        const flat = flats.find((flat) => flat.id === location.state.apartmentId);
-        setFlat(flat);
-      })
-      .catch(console.error);
-  }
   if (flat == null) return <div>Loading...</div>;
   return (
     <div className="apartment-page">

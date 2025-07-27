@@ -40,16 +40,16 @@ function ImageBanner(props) {
    ));
   };
 
- return (
+return (
   <div className="image-banner">
     <div className="image-container">{getCarouselOrDefaultImage()}</div>
     {arePicturesAvailable() && (
       <>
         <button className="btn btn-previous" onClick={mooveToPrevious}>
-          <i className="fas fa-chevron-left"></i> {/* ← vers la gauche */}
+          <i className="fas fa-chevron-left"></i>
         </button>
         <button className="btn btn-next" onClick={mooveToNext}>
-          <i className="fas fa-chevron-right"></i> {/* → vers la droite */}
+          <i className="fas fa-chevron-right"></i>
         </button>
       </>
     )}
