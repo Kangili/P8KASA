@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <NavLink to ="/">
-        <div className="navbar__logo">
-         <img src ="logo.png" alt="Logo" />
+        <div>
+         <img className="navbar__logo" src ="logo.png" alt="Logo" />
         </div>
       </NavLink>
       <NavLink to ="/">

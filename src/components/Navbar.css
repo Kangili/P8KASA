@@ -12,6 +12,10 @@
     text-transform: uppercase;
     font-weight: 400;
   }
+
+  .navbar__logo{
+    width: 100px;
+  }
 }
 
 .navbar a {
