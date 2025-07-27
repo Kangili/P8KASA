@@ -44,10 +44,13 @@ return (
   <div className="image-banner">
     <div className="image-container">{getCarouselOrDefaultImage()}</div>
     {arePicturesAvailable() && (
-      <>
+      <> 
         <button className="btn btn-previous" onClick={mooveToPrevious}>
           <i className="fas fa-chevron-left"></i>
         </button>
+        <span className="slide-counter">
+          {currentPicture + 1} / {pictures.length}
+        </span>
         <button className="btn btn-next" onClick={mooveToNext}>
           <i className="fas fa-chevron-right"></i>
         </button>
