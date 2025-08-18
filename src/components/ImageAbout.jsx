@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import defaultBanner from '../assets/about-banner.png'; // image locale dans src/assets
 import "./ImageBanner.css";
 
-function ImageBanner(props) {
+function ImageAbout(props) {
   const pictures = props.pictures || [defaultBanner];
 
   const [currentPicture, setCurrentPicture] = useState(0);
@@ -42,7 +42,7 @@ function ImageBanner(props) {
 
 return (
   <div className="image-banner">
-    <div className="image-carousel">{getCarouselOrDefaultImage()}</div>
+    <div className="image-container">{getCarouselOrDefaultImage()}</div>
     {pictures.length > 1 && (
       <> 
         <button className="btn btn-previous" onClick={mooveToPrevious}>
@@ -60,8 +60,4 @@ return (
 );
 };
 
-export default ImageBanner;
-
-
-
-
+export default ImageAbout;

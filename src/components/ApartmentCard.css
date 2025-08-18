@@ -4,11 +4,10 @@
   display: grid;
   align-items: end;
   min-width: 200px;
-  min-height: 200px;
+  height: 100%;
   background-size: cover;
   position: relative;
   overflow: hidden;
-  background-size: cover;
 }
 
 .apartment img {
