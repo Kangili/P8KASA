@@ -25,12 +25,12 @@
     margin-left: 0;
     align-items: center;
     justify-content: space-between;
-    gap: 6rem;
+    width: 100%;
   }
 }
 
 .apartment_owner_stars {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   color:#c4c4c4;
 }
@@ -55,7 +55,6 @@
 @media screen and (max-width: 768px) {
   .apartment_owner_details {
     order: 1;
-    text-align: left;
   }
 }
 
@@ -65,10 +64,10 @@
   line-height: 1.2;
   color: #ff6060;
   margin: 0;
+  text-align: right;
 }
 
 .owner_lastname {
-  margin-left: 1.5rem;
   display: inline-block;
 }
 

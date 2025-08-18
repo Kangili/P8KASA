@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./ApartmentGrid.css"
 import ApartmentCard from "./ApartmentCard.jsx"
 import useApartments from "../hooks/useApartments.jsx";
+import apartments from "../assets/db.json";
+
 
 function ApartmentGrid(){
- const apartments = useApartments();  
+ 
  return(
     <div className="grid">
        {apartments.map((apartment) =>(

@@ -7,7 +7,7 @@
 
  useEffect(() =>{
   const abortConroller = new AbortController();
-  fetch("db.json")
+  fetch("../assets/db.json")
       .then((res) => res.json())
       .then((flats) => {
         // Correction: c'est "selectedFlat" ou "flat" ? ici flat dans find

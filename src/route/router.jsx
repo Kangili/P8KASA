@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Homepage/> }, // Route d'accueil
       {
-        path: "/flat",
+        path: "/flat/:id", // pour faire passer ID 
        element: (
        <Main>
         <ApartmentPage />

@@ -4,9 +4,12 @@ import { DescriptionPanel } from "../components/DescriptionPanel";
 import ImageBanner from '../components/ImageBanner';
 import ApartmentHeader from "../components/ApartmentHeader";
 import useApartment from "../hooks/useApartment.jsx";
+import logementsData from "../assets/db.json";
+import { useParams } from "react-router-dom";
 
 function ApartmentPage() {
-  const flat = useApartment();
+  const {id} = useParams(); // récupérer id dans URL 
+  const flat = logementsData.find(logement => logement.id = id); 
 
   if (flat == null) return <div>Loading...</div>;
   return (
