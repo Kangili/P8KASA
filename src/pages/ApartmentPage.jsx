@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 function ApartmentPage() {
   const {id} = useParams(); // récupérer id dans URL 
-  const flat = logementsData.find(logement => logement.id = id); 
+  const flat = logementsData.find(logement => logement.id === id); 
 
   if (flat == null) return <div>Loading...</div>;
   return (
