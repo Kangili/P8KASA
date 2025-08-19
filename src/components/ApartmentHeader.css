@@ -105,12 +105,14 @@
 .apartment_title_red {
   color: #ff6060; /* rouge identique aux tags */
   font-weight: 300; 
+  margin-bottom: auto;
 }
 
 .apartment_location_black {
   color: #000000; /* noir */
   font-weight: 300; 
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 
