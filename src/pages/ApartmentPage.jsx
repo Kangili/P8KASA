@@ -11,7 +11,9 @@ function ApartmentPage() {
   const {id} = useParams(); // récupérer id dans URL 
   const flat = logementsData.find(logement => logement.id === id); 
 
-  if (flat == null) return <div>Loading...</div>;
+  if (!flat) {
+        return <Navigate to="../404" />;
+    }
   return (
     <div className="apartment-page">
       <ImageBanner pictures = {flat.pictures}/>
